@@ -1,4 +1,4 @@
-# ** 'Movie Fight' App**
+# **'Movie Fight' App**
 #### **Study Core:**
 - Fetch from APIs using Axios;
 - Principles of 'modular' and reusable code;
