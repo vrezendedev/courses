@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.18.0/matter.min.js"></script>
+    <style>
+      body {
+        margin: 1;
+      }
+
+      .hidden {
+        display: none !important;
+      }
+
+      h1 {
+        color: whitesmoke;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 48px;
+      }
+
+      h2 {
+        color: whitesmoke;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 36px;
+        cursor: pointer;
+      }
+
+      .winner {
+        display: flexbox;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: 1;
+        height: 100vh;
+        width: 100vw;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="winner hidden">
+      <h1>You Win!</h1>
+      <h2 id="restart">Restart!</h2>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
