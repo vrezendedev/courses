@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Mali&display=swap");
+
+.container {
+  margin: 10px 20px;
+}
+
+svg {
+  display: block !important;
+}
+
+input {
+  margin: 8px 0;
+}
+
+label {
+  font-weight: 700;
+}
+
+.title {
+  margin-top: 10px;
+}
+
+.field h1 {
+  font-size: 48px;
+  font-weight: 900;
+  text-align: center;
+  text-shadow: 2px 2px 2px #616161;
+}
+
+html {
+  min-height: 100vh;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #9fc4a5;
+  font-family: "Mali", sans-serif;
+  color: white !important;
+}
+
+label,
+h1 {
+  color: white !important;
+}
+
+h1 {
+  z-index: 20;
+  position: relative;
+}
+
+.container {
+  margin: 0px;
+  padding: 10px 20px;
+}
+
+.opts {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10px;
+}
+
+.opt {
+  margin: 3px 5px;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  padding: 1px 3px;
+  cursor: pointer;
+}
+
+.opt.selected {
+  background-color: #f3fadc;
+  color: black;
+}
+
+.wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.wrapper .flower-right {
+  position: absolute;
+  height: 100px;
+  top: 20px;
+  right: 0px;
+  z-index: 1;
+}
+
+.wrapper .flower-left {
+  position: absolute;
+  height: 100px;
+  left: 0px;
+  top: 20px;
+}
+
+.wrapper > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 10%;
+  z-index: 30;
+}
+
+.translate {
+  z-index: 20;
+  position: relative;
+}
+
+.translate h1 {
+  position: relative;
+  text-shadow: 2px 2px 2px #848484;
+  text-align: center;
+  background-color: #d3dbb7;
+  padding: 20px;
+  border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+}
+
+.blob {
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+}
