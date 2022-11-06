@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'Antonio';
+  src: local('Antonio'), url(./antonio.ttf) format('truetype');
+}
+
+iframe {
+  height: 0px !important;
+  width: 0px !important;
+}
+
+body {
+  position: relative;
+}
+
+.ui.container:before {
+  content: 'The Perfect';
+  text-transform: uppercase;
+  color: #fc4217;
+  background-color: #ffffff;
+  font-family: 'Antonio';
+  display: inline-block;
+  padding: 25px;
+  position: relative;
+  margin: 5px 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 48px;
+  border-radius: 5px;
+}
+
+.ui.container .divided.list:before {
+  content: 'Blog List';
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #fc4217;
+  font-family: 'Antonio';
+  display: inline-block;
+  padding: 25px;
+  position: relative;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 48px;
+  border-radius: 5px;
+}
+
+.ui.container {
+  padding-top: 20px;
+}
+
+.ui.container .ui.list .item {
+  margin-bottom: 10px;
+  background-color: #f8f7f3;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid #b3a599;
+}
+
+.ui.container .ui.list .item .middle.aligned.icon.user {
+  padding: 10px;
+}
+
+h2 {
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+
+.description p {
+  margin-bottom: 5px;
+}
