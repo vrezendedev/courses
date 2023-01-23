@@ -1,4 +1,4 @@
-# **Typescript: The Complete Developer's Guide**
+# **Go: The Complete Developer's Guide**
 #### **All apps were created alongside this course.**
 Within the app folder you will find a READ ME detailing what has been done.
 
