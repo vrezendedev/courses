@@ -1,5 +1,9 @@
 # **Cards**
+
 #### **Study Core:**
-- Variables;
-- Functions;
-- Loops.
+
+-   Variables;
+-   Types;
+-   Functions;
+-   Loops;
+-   Packages.
