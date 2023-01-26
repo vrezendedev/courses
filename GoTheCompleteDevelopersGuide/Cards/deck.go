@@ -2,9 +2,10 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
+	"math/rand"
 	"os"
 	"strings"
+	"time"
 ) 
 
 type deck []string
@@ -21,7 +22,19 @@ func (d deck) toString() string {
 
 func (d deck) saveToFile(filename string) error {
 	//0666 means anyone can read/write this file
-	return ioutil.WriteFile(filename, []byte(d.toString()), 0666)
+	return os.WriteFile(filename, []byte(d.toString()), 0666)
+}
+
+func (d deck) shuffle() {
+	source := rand.NewSource(time.Now().UnixNano())
+	r := rand.New(source)
+
+	for i := range d {
+		
+		newPosition := r.Intn(len(d) - 1)
+
+		d[i], d[newPosition] = d[newPosition], d[i]
+	}
 }
 
 func newDeck() deck {
@@ -44,7 +57,7 @@ func deal(d deck, handSize int) (deck, deck) {
 }
 
 func newDeckFromFile(filename string) deck {
-	bs, err := ioutil.ReadFile(filename)
+	bs, err := os.ReadFile(filename)
 	if err != nil {
 		fmt.Println("Error:", err)
 		os.Exit(1)

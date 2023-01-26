@@ -6,4 +6,5 @@
 -   Types;
 -   Functions;
 -   Loops;
--   Packages.
+-   Packages;
+-   Tests.
